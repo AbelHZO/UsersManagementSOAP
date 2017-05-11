@@ -97,11 +97,11 @@ public class RolesBO implements RolesServiceBO {
 
 	@Override
 	@Validateconfig
-	public ResponseWrapper<RolesJAX.RolRS> getRol(ConfigJAX config, Long idRol) {
+	public ResponseWrapper<RolesJAX.RolRS> getRol(ConfigJAX config, Long idrol) {
 
 		ResponseWrapper<RolesJAX.RolRS> data = new ResponseWrapper<RolesJAX.RolRS>();
 
-		Role role = rolesServiceDAO.getRol(idRol);
+		Role role = rolesServiceDAO.getRol(idrol);
 
 		if (role == null) {
 

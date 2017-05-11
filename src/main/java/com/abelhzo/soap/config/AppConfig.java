@@ -86,7 +86,7 @@ public class AppConfig {
  *	        <module name="javax.transaction.api"/>
  *	        <module name="javax.servlet.api" optional="true"/>
  *	    </dependencies>
-	 *	</module>
+ *	</module>
  * 
  * 
  *	<?xml version="1.0" encoding="UTF-8"?>
@@ -99,7 +99,7 @@ public class AppConfig {
  *	        <module name="javax.transaction.api"/>
  *	        <module name="javax.servlet.api" optional="true"/>
  *	    </dependencies>
-	 *	</module> 
+ *	</module> 
  * 
  * 
  * 4.- Registrar las entradas en el archivo standalone.xml o standalone-full.xml 

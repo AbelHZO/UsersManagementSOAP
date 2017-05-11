@@ -31,8 +31,8 @@ public class Rol extends SpringBeanAutowiringSupport implements RolService {
 	}
 
 	@Override
-	public ResponseWrapper<RolesJAX.RolRS> getRol(ConfigJAX config, Long idRol) {
-		return rolesServicesBO.getRol(config, idRol);
+	public ResponseWrapper<RolesJAX.RolRS> getRol(ConfigJAX config, Long idrol) {
+		return rolesServicesBO.getRol(config, idrol);
 	}
 
 	@Override

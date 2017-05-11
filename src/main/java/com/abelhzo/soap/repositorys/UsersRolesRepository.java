@@ -10,10 +10,10 @@ import org.springframework.data.repository.query.Param;
 import com.abelhzo.jpa.Usersrole;
 
 public interface UsersRolesRepository extends JpaRepository<Usersrole, Long> {
-	
+
 	@Query("SELECT ur FROM Usersrole ur WHERE ur.id.iduser = :iduser")
 	List<Usersrole> findByIduser(@Param("iduser") Long iduser);
-	
+
 	@Modifying(clearAutomatically = true)
 	@Query("DELETE FROM Usersrole ur WHERE ur.id.iduser = :iduser")
 	void deleteUsersRolesByIduser(@Param("iduser") Long iduser);

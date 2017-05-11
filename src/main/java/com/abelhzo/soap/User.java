@@ -12,11 +12,11 @@ import com.abelhzo.soap.jaxws.UserJAX;
 import com.abelhzo.soap.service.UserService;
 
 @WebService(serviceName = "UsersServiceSOAP", 
-			portName = "UsersServicePortSOAP",
-			endpointInterface = "com.abelhzo.soap.service.UserService",
+			portName = "UsersServicePortSOAP", 
+			endpointInterface = "com.abelhzo.soap.service.UserService", 
 			targetNamespace = "http://abelhzo.users/")
 public class User extends SpringBeanAutowiringSupport implements UserService {
-	
+
 	@Autowired
 	private UsersServiceBO usersServicesBO;
 
@@ -31,8 +31,8 @@ public class User extends SpringBeanAutowiringSupport implements UserService {
 	}
 
 	@Override
-	public ResponseWrapper<UserJAX.UserRS> getUser(ConfigJAX config, Long idUser) {
-		return usersServicesBO.getUser(config, idUser);
+	public ResponseWrapper<UserJAX.UserRS> getUser(ConfigJAX config, Long iduser) {
+		return usersServicesBO.getUser(config, iduser);
 	}
 
 	@Override
@@ -49,5 +49,5 @@ public class User extends SpringBeanAutowiringSupport implements UserService {
 	public ResponseWrapper<UserJAX.UserRS> logoutUser(ConfigJAX config, UserJAX.UserLogoutRQ rq) {
 		return usersServicesBO.logoutUser(config, rq);
 	}
-	
+
 }

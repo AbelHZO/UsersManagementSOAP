@@ -9,7 +9,7 @@ public class Codes {
 	 * Status valido
 	 */
 	public static final String OK = "OK";
-	
+
 	/**
 	 * Status invalido
 	 */

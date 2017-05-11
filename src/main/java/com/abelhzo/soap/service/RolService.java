@@ -29,7 +29,7 @@ public interface RolService {
 	@WebResult(name = "RolRS")
 	public ResponseWrapper<RolesJAX.RolRS> getRol(
 			@WebParam(name = "ConfigJAX") @XmlElement(required = true) ConfigJAX config,
-			@WebParam(name = "idRol") @XmlElement(required = true) Long idRol);
+			@WebParam(name = "idrol") @XmlElement(required = true) Long idrol);
 
 	@WebMethod(operationName = "listRolSOAP")
 	@WebResult(name = "RolRS")

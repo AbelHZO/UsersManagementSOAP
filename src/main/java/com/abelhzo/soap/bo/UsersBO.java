@@ -228,12 +228,12 @@ public class UsersBO implements UsersServiceBO {
 
 	@Override
 	@Validateconfig
-	public ResponseWrapper<UserJAX.UserRS> getUser(ConfigJAX config, Long idUser) {
+	public ResponseWrapper<UserJAX.UserRS> getUser(ConfigJAX config, Long iduser) {
 
 		ResponseWrapper<UserJAX.UserRS> data = new ResponseWrapper<UserJAX.UserRS>();
 
 		User user = new User();
-		user.setIduser(idUser);
+		user.setIduser(iduser);
 
 		user = usersServiceDAO.getUser(user);
 

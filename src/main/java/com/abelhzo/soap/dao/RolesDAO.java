@@ -38,8 +38,8 @@ public class RolesDAO implements RolesServiceDAO {
 	}
 
 	@Override
-	public Role getRol(Long idRole) {
-		return rolesRepository.findOne(idRole);
+	public Role getRol(Long idrole) {
+		return rolesRepository.findOne(idrole);
 	}
 
 	@Override

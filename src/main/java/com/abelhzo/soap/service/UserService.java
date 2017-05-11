@@ -29,7 +29,7 @@ public interface UserService {
 	@WebResult(name = "UserRS")
 	public ResponseWrapper<UserJAX.UserRS> getUser(
 			@WebParam(name = "ConfigJAX") @XmlElement(required = true) ConfigJAX config,
-			@WebParam(name = "iduser") @XmlElement(required = true) Long idUser);
+			@WebParam(name = "iduser") @XmlElement(required = true) Long iduser);
 
 	@WebMethod(operationName = "listUserSOAP")
 	@WebResult(name = "UserRS")
