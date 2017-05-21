@@ -23,6 +23,8 @@ public class MessageJAX {
 	protected String criticality;
 	@XmlElement(required = true)
 	protected String description;
+	
+	public MessageJAX() {}
 
 	public MessageJAX(String code, String type, Timestamp current, String criticality, String description) {
 		super();
